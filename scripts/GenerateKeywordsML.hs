@@ -49,7 +49,7 @@ genOutput1 (ttok,tstr) =
     genTok ts = ts
     pattern = "\"" ++ tstr ++ "\""
     escape_sml body3 =
-             if body3 `elem` ["case", "do", "else", "for", "if", "struct", "while"] then
+             if body3 `elem` ["case", "do", "else", "for", "if", "struct", "while", "return"] then
                body3 ++ "0"
              else
                body3
